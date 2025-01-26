@@ -66,7 +66,7 @@ router.get('/', async (req, res) => {
 [ 🔘https://whatsapp.com/channel/0029VawBbI40AgWKACOjdm1T🔘]
 ❏ᴀɴʏ ᴅɪғғɪᴄᴜʟᴛɪᴇs ᴄᴏɴᴛᴀᴄᴛ ʙᴏᴛ ᴏᴡɴᴇʀ❏
 
-> ɢᴇɴᴀʀᴀᴛᴇᴅ ʙʏ ʀɪᴄʜɢᴀɢᴀᴍɪᴅᴜsʜ`
+> Created by Mustaffa and Gaga`
  await Pair_Code_By_Winsper_Tech.sendMessage(Pair_Code_By_Winsper_Tech.user.id,{text: WILLIS_MD_TEXT},{quoted:session})
  
 
