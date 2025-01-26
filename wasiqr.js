@@ -56,27 +56,17 @@ router.get('/', async (req, res) => {
 					let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
 					await delay(800);
 				   let b64data = Buffer.from(data).toString('base64');
-				   let session = await Qr_Code_By_Wasi_Tech.sendMessage(Qr_Code_By_Wasi_Tech.user.id, { text: 'XGAGA_BOT' + b64data });
+				   let session = await Qr_Code_By_Wasi_Tech.sendMessage(Qr_Code_By_Wasi_Tech.user.id, { text: '' + b64data });
 	
-				   let TREX_MD_TEXT = `
-❏ ｇａｇａ ｍｄ ｓｅｓｓｉｏｎ ｓｕｃｃｅｓｓｆｕｌｌｙ ｃｏｎｎｅｃｔｅｄ ❏
+				   let TREX_MD_TEXT = `❏ MUSTAFFA MK ｓｅｓｓｉｏｎ ｓｕｃｃｅｓｓｆｕｌｌｙ ｃｏｎｎｅｃｔｅｄ ❏
 
 ❏ ʏᴏᴜ ʜᴀᴠᴇ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ᴛʜᴇ ғɪʀsᴛ sᴛᴇᴘ , ᴄᴏᴘʏ ᴛʜᴇ ᴀʙᴏᴠᴇ sᴇssɪᴏɴ ᴀɴᴅ sᴇɴᴅ ɪᴛ ᴛᴏ ʏᴏᴜʀ ᴅᴇᴘʟᴏʏᴇʀ ᴏʀ ᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ❏
 
 ❏ғᴏʟʟᴏᴡ ʙᴏᴛ ᴄʜᴀɴɴᴇʟ ғᴏʀ ᴜᴘᴅᴀᴛᴇs  ❏
-[ 🔘https://whatsapp.com/channel/0029VasnifMFi8xW4Mqysn2F🔘]
+[ 🔘https://whatsapp.com/channel/0029VawBbI40AgWKACOjdm1T🔘]
 ❏ᴀɴʏ ᴅɪғғɪᴄᴜʟᴛɪᴇs ᴄᴏɴᴛᴀᴄᴛ ʙᴏᴛ ᴏᴡɴᴇʀ❏
 
-> *𝚠𝚑𝚊𝚝𝚜𝚊𝚙𝚙⇘* 
-https://wa.me/254112291443
-
-> *𝙸𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖⇘* 
-https://www.instagram.com/richgagamidush
-
-> *𝚝𝚎𝚕𝚎𝚐𝚛𝚊𝚖⇘*
-t.me/richardgaga]
-
-> ɢᴇɴᴀʀᴀᴛᴇᴅ ʙʏ ʀɪᴄʜɢᴀɢᴀᴍɪᴅᴜs`
+> Created by Mustaffa and Gaga`
 	 await Qr_Code_By_Wasi_Tech.sendMessage(Qr_Code_By_Wasi_Tech.user.id,{text:WASI_MD_TEXT},{quoted:session})
 
 
